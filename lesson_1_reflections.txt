@@ -1,0 +1,35 @@
+commit: save documents
+
+<Git command>
+git clone
+git log
+git diff 'id1' 'id2'
+git checkout
+
+git init : greate .git
+git status
+git add "file" : add to staging area
+git reset : remove from staging area
+git commit
+git commit -m "message"
+
+git diff : difference between working directory and staging area
+git diff --staged : difference between stagiing area and repository (remote?)
+git reset --hard : discard changes in working directory and staging area and copy repository
+
+remote = remote repository. Stuff that's on your hard drive is local. Stuff that's on GitHub's server is remote. origin = the default name of the remote repository on GitHub corresponding to the repo you're currently in on your machine. master = the default name of the initial branch of a repository. So, "origin master" is the default branch of your repository on GitHub.
+
+<Create branch>
+git branch : just to check branch
+git branch "branch name" : create brance (*a)
+git checkout "branch name" : switch banches (*b)
+git checkout -n "branch name" : does both *a and *b
+git log --graph --oneline master "branch name" : to see the visual representation of the commit history
+
+head = current commit
+
+<Merge branch>
+git merge branch1 branch2
+git show commit_id : to compare a commit to its parent is 
+git branch -d branch_name : delete the label of the branch
+
